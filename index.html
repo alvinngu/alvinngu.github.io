@@ -1,70 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-
-  <title>Alvin Ngu - Mechanical Engineer</title>
+  <title>PORTFOLIO</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="SitePoint">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio">
+  <meta name="keywords" content="Design">
+  <meta name="author" content="Alvin Ngu">
+  <meta name="copyright" content="Alvin Ngu">
 </head>
-
+<!--
+BODY
+  -->
 <body>
-<!-- Nav -->
-  <div class="container"></div>
 
-<!--REMOVED
-  <div class="sidebar">
-    <nav>
-  <ul>
-    <li><a href="#">"About"</a></li>
-    <li><a href="#">"Portfolio"</a></li>
-    <li><a href="#">"Contact"</a></li>
-  </ul>
-    </nav>
-  </div>
--->
+<div class="wrapper">
 
-<!-- Photo -->
-  <div class="content">
-  <section class="hero">
-    <img src="images/ANx500x500.png"/>
-    <div class="hero-content">
-      <h1> Alvin Ngu. </h1>
-      <h2> Mechanical Engineer &amp; <span class="blue">Product Designer </h2>
-      <p> I'm passionate about solving today's problems with innovative design. I've worked with startups and companies on their design challenges. </p>
-<a class="action-btn" href="#">Contact Me</a>
-</div>
-</div>
-<!-- About -->
-<div class="about">
-    <h1>Hello.</h1>
-    <p>I am a recent mechanical engineering graduate from the University of Alberta and currently living in Edmonton.<br></p>
+  <!--
+  NAVIGATION
+  -->
 
-    <p>My most recent work stint was at John Deere where I designed, prototyped, and manufactured production tools used in transmission assembly lines.
-      Oftentimes, the process involved bouncing ideas back and forth with technicians and turning an idea or sketch drawn on a napkin into something tangible the next day.
-       My past experiences have instilled the importance of leveraging user input and utilizing user-centered design, lessons I carry with me to this day.<br></p>
-
-    <p>Growing up in a landlocked and cold Canadian province like Alberta has made me appreciate any opportunity I get to enjoy the outdoors.
-      I try to spend most of my free time being active, whether it be hiking, snowboarding, or playing beach volleyball.</p>
-</div>
-
-<!-- Footer -->
-<div class="footer">
-    <footer>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+  <div class = "navbar">
+    <a href="#home" class = "logo"><p>Alvin Ngu | Prod. Design<p></a>
+      <ul class = "nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </footer>
+  </div>
+
+
+  <!--
+  LANDING
+  -->
+<div class = "landing-area" id="home">
+  <div class="landing">
+    <p>Simple, but not simpler.</p>
+  </div>
+</div>
+  <!--
+  ABOUT
+  -->
+  <div class = "about-area" id="about">
+    <div class="aboutme">
+        <h1>Hello.</h1>
+        <p>I am a recent mechanical engineering graduate from the University of Alberta and currently based out of Edmonton.
+          Due to my passion for innovative technology, I would love to work for a design studio that allows me to apply
+          mechanical design principles to consumer, industrial, and commercial products that are changing the world.<br></p>
+
+        <p>My most recent work stint was at John Deere where I designed, prototyped, and manufactured production tools used in transmission assembly lines.
+          Oftentimes, the process involved bouncing ideas back and forth with technicians and turning an idea or sketch drawn on a napkin into something tangible the next day.
+           My past experiences have instilled the importance of leveraging user input and utilizing user-centered design, lessons I carry with me to this day.<br></p>
+
+        <p>I can gladly say that I am a product of my environment. Growing up in a landlocked and cold Canadian province
+          like Alberta has made me appreciate any opportunity I get to enjoy the outdoors. Shredding gnar pow on my snowboard,
+          running trails, or a mouth full of sand after playing beach volleyball is when I am the happiest.</p>
+    </div>
+  </div>
+
+
+  <!--
+  WORK - Images displaying portfolio, commented out the other two images
+  -->
+<div class = "work-area" id="work">
+    <div class="container">
+      <a href="#"><img src="images/01.png" alt="project image" class ="image"></a>
+        <div class="overlay">
+          <div class="text">Compass.<br><p>A smart navigational tool for the urban bike commuter.<p></div>
+        </div>
+    </div>
 </div>
 
-<!--Footer button-->
-  <a class="gotopbtn" href="#"> <i class="fas fa-angle-double-up"></i> </a>
+<!--
+Contact
+  -->
+<div class = "contact-area" id="contact">
+  <div class="contact">
+    <p>Happy to work with you just send me an<a href="mailto:angu@ualberta.ca"> email!</a></p>
+  </div>
+</div>
 
+
+<!--
+FOOTER
+  -->
+
+<footer>
+    <p>© Alvin Ngu 2020</p>
+</footer>
+
+</div>
 </body>
-
 </html>
