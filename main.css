@@ -1,414 +1,316 @@
-/*-------- Global --------*/
-*{
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-.clearfix::after {
-  content:"";
-  clear: both;
-  display: table;
-
-}
-
-html{
+html {
   font-family: 'Roboto', sans-serif;
+  font-family: 'Lora', serif;
   font-weight: 400;
   scroll-behavior: smooth;
 }
 
-body{
-  width: 60%;
-  margin: auto;
-  background-image: url(images/BG.png);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+/* BACKGROUND IMAGE */
+body {
+  width: 100%;
+  padding-top: 0px;
 }
 
-.blue {
-  color: #3498db;
+wrapper {
+  width:90%;
+  margin: 0 auto;
+  clear: both;
 }
 
-h6 {
-  font-size: 45px;
-  font-weight: 500;
-  color: #17191A;
-}
 
 h1 {
-  font-size: 40px;
-  font-weight: 400;
-  color: #17191A;
-}
+  color: black;
+  font-size: 48px;
 
-h2 {
-  font-size: 35px;
-  font-weight: 400;
-  color: #17191A;
-}
-
-h5 {
-  font-size: 20px;
-  margin-top: 10px;
-  color: #17191A;
 }
 
 p {
-  color: #808080;
-  opacity: 0.8;
-  font-weight: 400;
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-h7 {
-  color: #808080;
-  opacity: 0.8;
-  font-weight: 400;
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-/*-------- Nav --------*/
-.nav {
-  display: flex;
-  align-items: center;
-  height: 100px;
-}
-
-.contactMe, .navIcons {
-  flex: 1;
-}
-
-.navIcons {
-  text-align: right;
-}
-
-.navIcons a, .contactMe a, .contactMe img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.navIcons a {
-  margin-left: 40px;
-}
-
-.contactMe a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.contactMe img {
-  margin-right: 10px;
-
-}
-
-.contactMe img {
-  margin-right: 10px;
-
-}
-
-.contactMe p {
-  font-size: 18px;
-  color: #3498db;
-  font-weight: 500;
-}
-
-
-/*-------- Landing --------*/
-.landing {
-height: 100vh;
-position: relative;
-display: flex;
-}
-
-.landingWrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
+  color: black;
+  font-size: 16px;
 }
 
 ul {
   list-style: none;
   margin-top: 30px;
-  line-height: 30px;
 }
 
-.landingL {
-  margin-top: 4em;
+li {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-.landingL p {
-  color: #696969;
+/* NAVIGATION */
+
+.navbar {
+  position:fixed;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 1;
+  height: 55px;
+  background-color: white;
 }
 
-.landingR {
-  margin-left: 90px;
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin: auto auto auto 24px;
 }
 
-.scroll {
-  position: absolute;
-  bottom: 180px;
-  left: 0;
-  right: 0;
+.logo {
+  flex: 1 1 auto;
+  margin: auto auto auto 24px;
+  text-decoration: none;
+}
+
+.logo p {
+  color: black;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: bold;
+
+}
+
+.nav ul {
+  width: 50%;
+}
+
+.nav li {
+    margin: auto 24px auto auto;
+}
+
+.nav li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: bold;
+
+  color: black;
+}
+
+.logo p:hover {
+  color: #FF680C;
+}
+
+.nav li a:hover {
+  color: #FF680C;
+}
+
+
+
+/*Landing */
+.landing-area {
+}
+
+.landing-area .landing {
+  padding-top: 10em;
+  padding-bottom: 10em;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+}
+
+.landing-area .landing p {
+  width: 75%;
   margin: auto;
+  padding: 10%;
+  font-size: 64px;
+  font-family: Lora;
+  color: black;
+
+}
+
+/*Padding for About and Work*/
+
+.about-area, .work-area, .contact-area {
+  padding: 10px 100px;
+
 }
 
 /*-------- About --------*/
-.about {
+
+.about-area .aboutme {
   text-align: justify;
   text-justify: inter-word;
-  margin-bottom: 18em;
+  width: 70%;
+  margin: 3em auto 15em auto;
 }
 
-.about p {
+.about-area .aboutme h1 {
+  font-family: Roboto;
+  font-weight: 700;
+  color: black;
+}
+
+.about-area .aboutme p {
   margin-bottom: 22px;
   font-size: 18px;
+  font-weight: 300;
   line-height: 1.5;
+  color: #5E5E5E;
+  font-family: Roboto;
 }
 
-/*REMOVED SKILLS SECTION
-/*-------- Skills --------
-.skills {
+/*-------- WORK --------*/
+.work-area {
+
+}
+
+/*-------- image container, change the width % to change image size --------*/
+.container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 3em;
+}
+
+/*-------- image fills the container --------*/
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*-------- overlay, use rgba values to get the transparent overlay --------*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(36, 36, 36, 0.4)
+}
+
+/*-------- hover --------*/
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/*-------- large text --------*/
+.text {
+  color: white;
+  font-size: 48px;
+  font-family: Roboto;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 2%;
+  margin-bottom: 2%;
+
+}
+
+/*-------- description text --------*/
+.text p {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Roboto;
+}
+
+
+/* CONTACT */
+.contact-area .contact {
+  margin: 15em auto 15em auto;
   text-align: center;
-  margin-bottom: 20em;
+  width: 75%;
 }
 
-.skills p {
-  margin-bottom: 30px;
-}
-
-.skills img {
-  width: 40px;
-  margin: 0 15px;
-}
-*/
-
-
-/*-------- Work 01 --------*/
-
-.work {
-  width: 100%;
-  position: relative;
-  margin-bottom: 20em;
-}
-
-.work > .workText {
-  position: absolute;
-  top: 85px;
-}
-
-.work > .workText > .underline {
-display: block;
-background-color: #3498db;
-height: 3px;
-width: 61px;
-margin-top: 5px;
-}
-
-.work > .workImg {
-  width: 85%;
-/*- For some reason the image will not float right, I added it in the index instead-*/
-/*  float: right; */
-  -webkit-box-shadow: 0px 3px 7px 0px rgba(23,30,36,0.06);
-  -moz-box-shadow: 0px 3px 7px 0px rgba(23,30,36,0.06);
-  box-shadow: 0px 3px 7px 0px rgba(23,30,36,0.06);
-}
-
-.work ul {
-  position: absolute;
-  bottom: 0;
-  right: 86%;
-}
-
-.work ul li {
-  margin-top: 20px;
+.contact-area .contact p{
+  width: 75%;
+  margin: 0 auto 0 auto;
+  font-size: 24px;
 }
 
 
-/*-------- Work 02 --------*/
-
-.work2 {
-  width: 100%;
-  position: relative;
-  margin-bottom: 15em;
-
-}
-
-.work2 > .workText {
-  position: absolute;
-  top: 85px;
-  right: 0px;
-  text-align: right;
-}
-
-.work2 > .workText > .underline {
-display: block;
-background-color: #3498db;
-height: 3px;
-width: 61px;
-margin-top: 5px;
-float: right;
-}
-
-.work2 > .workImg {
-  width: 85%;
-/*- For some reason the image will not float right, I added it in the index instead-*/
-/*  float: right; */
-  -webkit-box-shadow: 0px 3px 7px 0px rgba(23,30,36,0.06);
-  -moz-box-shadow: 0px 3px 7px 0px rgba(23,30,36,0.06);
-  box-shadow: 0px 3px 7px 0px rgba(23,30,36,0.06);
-}
-
-.work2 ul {
-  position: absolute;
-  bottom: 0;
-  left: 86%;
-}
-
-.work2 ul li {
-  margin-top: 20px;
-}
-
-
-
-/*-------- Work 01 and 02 --------*/
-/*-------- Remove hyperlink underline underneath the "View Project" 30:49 of the video --------*/
-/*-------- Had to add .work2 h1, for some reason the title of the second project is linked --------*/
-.work a, .work2 a, .work2 h1 {
+/*-------- CONTACT AREA --------*/
+/* Changes the highlight colour of the email text*/
+.contact-area .contact a{
+  color: #FF680C;
   text-decoration: none;
-  color: #17191A;
 }
 
-
-/*-------- Links --------https://www.youtube.com/watch?v=fDm0WJ_66d0*/
-.middle{
-  position: relative;
-  display: flex;
-  height: 100px;
-  align-items: center;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-
-}
-
-.btn {
+/* FOOTER */
+footer {
   text-align: center;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: #FFFFFF;
-  margin: 10px;
-  border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
-  color: #3498db;
-  overflow: hidden;
-  position: relative;
+  margin: 5px 0 20px 0;
 }
 
-.btn i{
-  line-height: 40px;
-  font-size: 20px;
-  transition: 0.2s linear;
+footer p {
+  color: #5E5E5E;
+  font-family: Roboto;
+  font-size: 12px;
 }
 
+/* responsive */
+@media only screen and (max-width: 991px) {
+  .about-area, .work-area, .contact-area {
+    margin: auto;
+  }
 
-.btn:hover i {
-  transform: scale(1.3);
-  color: #f1f1f1;
+  .container {
+    width: 100%;
 }
 
-
-.btn::before{
-  content: "";
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background: #3498db;
-  transform: rotate(45deg);
-  left: -110%;
-  top: 90%;
-}
-
-.btn:hover::before{
-  animation: aaa 0.7s 1;
-  top: -10%;
-  left: -10%;
-}
-@keyframes aaa {
-  0%{
-    left: -110%;
-    top: 90%;
-  }50%{
-    left: 10%;
-    top: -30%;
-  }100%{
-    top: -10%;
-    left: -10%;
+  .image {
+    width: 100%;
+    margin: auto;
   }
 }
 
-/*-------- Footer --------*/
-/*-------- https://www.youtube.com/watch?v=Vef9bxTilCU --------*/
-.gotopbtn{
-  position: fixed;
-  bottom: 40px;
-  right: 50px;
-  width: 40px;
-  height: 40px;
-  background: #FFFFFF;
-  margin: 10px;
-  border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
-  color: #3498db;
-  text-decoration: none;
-  text-align: center;
-  line-height: 40px;
-  font-size: 22px;
-  overflow: hidden;
+
+
+@media only screen and (max-width: 768px) {
+
+  .logo {
+    margin: 0px 0px 0px 12px;
+  }
+
+  .landing-area .landing p {
+    width: 60%;
+    margin: 30px auto 100px auto;
+  }
+
+  .about-area, .work-area, .contact-area {
+    padding: 0px 5%;
+    margin: auto;
+  }
+
+  .about-area .aboutme {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
 }
 
-.gotopbtn i {
-  transition: 0.2s linear;
-}
+  .image {
+    width: 100%;
+    margin: auto;
+  }
 
-.gotopbtn:hover i {
-  transform: scale(1.3);
-  color: #f1f1f1;
-}
-
-.gotopbtn::before{
-  content: "";
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background: #3498db;
-  transform: rotate(45deg);
-  left: -110%;
-  top: 90%;
-}
-
-.gotopbtn:hover::before{
-  animation: aaa 0.7s 1;
-  top: -10%;
-  left: -10%;
-}
-@keyframes aaa {
-  0%{
-    left: -110%;
-    top: 90%;
-  }50%{
-    left: 10%;
-    top: -30%;
-  }100%{
-    top: -10%;
-    left: -10%;
+  .nav li a {
+    text-decoration: none;
+    font-size: 0px;
   }
 }

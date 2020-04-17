@@ -1,126 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-
-  <title>My Portfolio</title>
+  <title>PORTFOLIO</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="SitePoint">
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio">
+  <meta name="keywords" content="Design">
+  <meta name="author" content="Alvin Ngu">
+  <meta name="copyright" content="Alvin Ngu">
 </head>
-
+<!--
+BODY
+  -->
 <body>
 
-<!--This is the navigation where the social media icons and contact go-->
-  <div class="nav">
-    <div class="contactMe">
-      <a href="#"><p><img src="images/Chat_Blue.png" alt ="chat logo">Contact Me</p></a>
-    </div>
+<div class="wrapper">
 
-<!-- Removed the social media navigation buttons
-    <div class="navIcons">
-      <a href="#"><img src="images/Youtube_Gray.png" alt="youtube logo"></a>
-      <a href="#"><img src="images/Be_Gray.png" alt="behance logo"></a>
-      <a href="#"><img src="images/Dribbble_Gray.png" alt="dribbble logo"></a>
-    </div>
--->
+  <!--
+  NAVIGATION
+  -->
 
-  </div>
-
-
-<!--This is the landing page where your name and bio goes-->
-<div class="landing">
-  <div class="landingWrapper">
-    <div class="landingL">
-      <h6>Alvin Ngu.</h6>
-      <p>Mechanical Engineer &amp; <span class="blue">Product Designer</span></p>
-      <ul>
-        <li><p>I am passionate about solving today's problems through innovative design.</p></li>
+  <div class = "navbar">
+    <a href="#home" class = "logo"><p>Alvin Ngu | Prod. Design<p></a>
+      <ul class = "nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-    <div class="landingR">
-    <img src="images/Face_image2.png" alt="Alvin Ngu Pic" width="300px">
-</div>
+  </div>
 
+
+  <!--
+  LANDING
+  -->
+<div class = "landing-area" id="home">
+  <div class="landing">
+    <p>Simple, but not simpler.</p>
   </div>
 </div>
+  <!--
+  ABOUT
+  -->
+  <div class = "about-area" id="about">
+    <div class="aboutme">
+        <h1>Hello.</h1>
+        <p>I am a recent mechanical engineering graduate from the University of Alberta and currently based out of Edmonton.
+          Due to my passion for innovative technology, I would love to work for a design studio that allows me to apply
+          mechanical design principles to consumer, industrial, and commercial products that are changing the world.<br></p>
 
-<!--This is the About Section-->
-<div class="about">
+        <p>My most recent work stint was at John Deere where I designed, prototyped, and manufactured production tools used in transmission assembly lines.
+          Oftentimes, the process involved bouncing ideas back and forth with technicians and turning an idea or sketch drawn on a napkin into something tangible the next day.
+           My past experiences have instilled the importance of leveraging user input and utilizing user-centered design, lessons I carry with me to this day.<br></p>
 
-    <h6>Hello.</h6>
-    <p>I am a recent mechanical engineering graduate from the University of Alberta and currently living in Edmonton.<br></p>
-
-    <p>My most recent work stint was at John Deere where I designed, prototyped, and manufactured production tools used in transmission assembly lines.
-      Oftentimes, the process involved bouncing ideas back and forth with technicians and turning an idea or sketch drawn on a napkin into something tangible the next day.
-       My past experiences have instilled the importance of leveraging user input and utilizing user-centered design, lessons I carry with me to this day.<br></p>
-
-    <p>Growing up in a landlocked and cold Canadian province like Alberta has made me appreciate any opportunity I get to enjoy the outdoors.
-      I try to spend most of my free time being active, whether it be hiking, snowboarding, or playing beach volleyball.</p>
-</div>
-
-
-<!--REMOVED SKILLS SECTION
-<div class="skills">
-
-    <h2>Skills</h2>
-    <p>Over 7 years of experience using<br> these programs</p>
-
-    <div class="programs">
-      <img src="images/Xd.png" alt="Xd icon">
-      <img src="images/Ps.png" alt="Ps icon">
-      <img src="images/Ai.png" alt="Ai icon">
-      <img src="images/Ae.png" alt="Ae icon">
+        <p>I can gladly say that I am a product of my environment. Growing up in a landlocked and cold Canadian province
+          like Alberta has made me appreciate any opportunity I get to enjoy the outdoors. Shredding gnar pow on my snowboard,
+          running trails, or a mouth full of sand after playing beach volleyball is when I am the happiest.</p>
     </div>
   </div>
--->
 
-<!--This is the Projects section-->
-<div class="work clearfix">
-  <div class="workText">
-    <h1>Project 01</h1>
-    <a href="#"><h5>View Project</h5></a>
-    <div class="underline"></div>
+
+  <!--
+  WORK - Images displaying portfolio, commented out the other two images
+  -->
+<div class = "work-area" id="work">
+    <div class="container">
+      <a href="#"><img src="images/01.png" alt="project image" class ="image"></a>
+        <div class="overlay">
+          <div class="text">Compass.<br><p>A smart navigational tool for the urban bike commuter.<p></div>
+        </div>
+    </div>
+</div>
+
+<!--
+Contact
+  -->
+<div class = "contact-area" id="contact">
+  <div class="contact">
+    <p>Happy to work with you just send me an<a href="mailto:angu@ualberta.ca"> email!</a></p>
   </div>
-    <ul>
-      <li><a href="#"><img src="images/Dribbble_Black.png" alt="dribbble icon"</a></li>
-      <li><a href="#"><img src="images/Be_Black.png" alt="behance icon"</a></li>
-      <li><a href="#"><img src="images/Youtube_Black.png" alt="youtube icon"</a></li>
-    </ul>
-<!--Image is 1074x604-->
-<!-- For some reason the image will not float right, I added it underneath instead, style="float: right;"-->
-    <img src="images/Project_01.png" alt="project image" class="workImg" style="float: right;">
 </div>
 
-<!--This is the Projects section-->
-<div class="work2 clearfix">
-  <div class="workText">
-    <h1>Project 02</h1>
-    <a href="#"><h5>View Project</h5></a>
-    <div class="underline"></div>
-  </div>
-    <ul>
-      <li><a href="#"><img src="images/Dribbble_Black.png" alt="dribbble icon"</a></li>
-      <li><a href="#"><img src="images/Be_Black.png" alt="behance icon"</a></li>
-      <li><a href="#"><img src="images/Youtube_Black.png" alt="youtube icon"</a></li>
-    </ul>
-<!--Image is 1074x604-->
-<!-- For some reason the image will not float left, I added it in the underneath instead, style="float: left;"-->
-    <img src="images/Project_02.png" alt="project image" class="workImg" style="float: left;">
-</div>
 
-<!--Links-->
-<div class="middle">
-  <a class="btn" href="#"><i class="fas fa-envelope-open-text"></i></a>
-  <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-  <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+<!--
+FOOTER
+  -->
+
+<footer>
+    <p>© Alvin Ngu 2020</p>
+</footer>
 
 </div>
-
-<!--Footer section-->
-  <a class="gotopbtn" href="#"> <i class="fas fa-angle-double-up"></i> </a>
 </body>
-
 </html>
