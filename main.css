@@ -31,6 +31,7 @@ wrapper {
 h1 {
   color: black;
   font-size: 48px;
+  font-family: Roboto;
 
 }
 
@@ -149,7 +150,7 @@ li {
   text-align: justify;
   text-justify: inter-word;
   width: 70%;
-  margin: 3em auto 15em auto;
+  margin: 3em auto 3em auto;
 }
 
 .about-area .aboutme h1 {
@@ -167,9 +168,22 @@ li {
   font-family: Roboto;
 }
 
+/* Changes the highlight colour of the email text*/
+.about-area .aboutme a{
+  color: #FF680C;
+  text-decoration: none;
+}
+
 /*-------- WORK --------*/
 .work-area {
 
+}
+
+.work-area .work-heading {
+  text-align: justify;
+  text-justify: inter-word;
+  width: 70%;
+  margin: 3em auto 0 auto;
 }
 
 /*-------- image container, change the width % to change image size --------*/
@@ -177,7 +191,7 @@ li {
   position: relative;
   width: 70%;
   margin: auto;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 
 /*-------- image fills the container --------*/
@@ -278,7 +292,13 @@ footer p {
   }
 }
 
+.logo p:hover {
+  color: black;
+}
 
+.nav li a:hover {
+  color: black;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -312,5 +332,9 @@ footer p {
   .nav li a {
     text-decoration: none;
     font-size: 0px;
+  }
+
+  .logo p:hover {
+    color: black;
   }
 }
