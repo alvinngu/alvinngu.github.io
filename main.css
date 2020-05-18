@@ -32,14 +32,14 @@ h1 {
   color: black;
   font-size: 3.5vh;
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h2 {
   color: black;
   font-size: 6vh;
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
 }
 
@@ -47,7 +47,7 @@ h3 {
   color: grey;
   font-size: 6vh;
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 p {
@@ -135,21 +135,29 @@ li {
 
 .landing-area .landing {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  background-color: black;
-  padding-top: 5vh;
+  text-align: left;
+  background-color: white;
+  padding-top: 4vh;
 }
 
-.landing-area .landing p {
-  width: 70%;
-  margin: auto;
-  font-size: 8vh;
+.landing-area .landing h3 {
+  width: 40%;
+  padding-top: 10vh;
+  font-size: 12vh;
+  font-weight: 700;
+  line-height: 1;
+  color: black;
+  margin-left: 15vh;
+}
+
+.landing-area .landing h2 {
+  width: 30%;
+  font-size: 4vh;
   font-family: Roboto;
-  font-weight: 300;
-  color: white;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #726f82;
+  margin-left: 15vh;
 }
 
 /*Padding for About and Work*/
@@ -171,6 +179,7 @@ li {
   margin: 3em auto 0 auto;
   text-justify: inter-word;
   padding-bottom: 15vh;
+
 }
 
 /*-------- image container, change the width % to change image size --------*/
@@ -237,7 +246,7 @@ li {
 
 /*-------- image container, change the width % to change image size, adjust padding between image and Recent Projects heading with bottom-padding --------*/
 .skills-area .skills-heading {
-  width: 80%;
+  width: 90%;
   margin: 3em auto 0 auto;
   text-justify: inter-word;
   padding-bottom: 25vh;
